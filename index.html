@@ -4,34 +4,25 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CV - Mouad Abdelhak</title>
-
   <link rel="stylesheet" href="style.css">
-
   <!-- ⭐ Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-
   <!-- ⭐ Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
   <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
   <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 </head>
-
 <body>
-
 <header>
   <img src="MyPic.jpg" class="profile-pic">
-
   <h1>Mouad Abdelhak</h1>
   <p>Étudiant SINF2 - FSSM | Futur développeur de jeux vidéo</p>
-
   <p>
     <i class="fa-solid fa-envelope"></i>
     <a href="mailto:morkadosse123@gmail.com">morkadosse123@gmail.com</a>
   </p>
-
   <p>
     <i class="fa-brands fa-github"></i>
     <a href="https://github.com/abdelhakmouad3-lab" target="_blank">
@@ -39,7 +30,6 @@
     </a>
   </p>
 </header>
-
 <section>
   <h2>À propos</h2>
   <p>
@@ -55,16 +45,13 @@
     et le surf quand j'étais à agadir.
   </p>
 </section>
-
 <section>
   <h2>Compétences</h2>
-
   <div class="skill"><p>HTML</p><div class="bar" data-width="80%"></div></div>
   <div class="skill"><p>CSS</p><div class="bar" data-width="75%"></div></div>
   <div class="skill"><p>JavaScript</p><div class="bar" data-width="50%"></div></div>
   <div class="skill"><p>C / DS</p><div class="bar" data-width="90%"></div></div>
 </section>
-
 <section>
   <h2>Formation</h2>
   <button class="toggle">Voir parcours</button>
@@ -74,12 +61,10 @@
     <p>2026 : FSSM SINF2</p>
   </div>
 </section>
-
 <section>
   <h2>Projets</h2>
   <div id="projects"></div>
 </section>
-
 <section>
   <h2>Contact</h2>
   <form id="contactForm">
@@ -89,7 +74,6 @@
     <button type="submit">Envoyer</button>
   </form>
 </section>
-
 <script type="text/babel">
 function ProjectCard({title, desc, tech}) {
   return (
@@ -100,7 +84,6 @@ function ProjectCard({title, desc, tech}) {
     </div>
   );
 }
-
 function App() {
   return (
     <div>
@@ -117,10 +100,8 @@ function App() {
     </div>
   );
 }
-
 ReactDOM.createRoot(document.getElementById('projects')).render(<App />);
 </script>
-
 <script src="script.js"></script>
 </body>
 </html>
