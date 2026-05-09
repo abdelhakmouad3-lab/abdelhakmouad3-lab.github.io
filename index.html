@@ -1,20 +1,177 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mouad Abdelhak - CV Interactif</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mouad Abdelhak - CV Interactif</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 </head>
 <body>
-    <div id="root"></div>
-
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/react@18.2.0/umd/react.development.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/react-dom@18.2.0/umd/react-dom.development.js"></script>
-    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-    <script type="text/babel" src="script.js"></script>
+<div class="container">
+  <header>
+    <div class="header-content">
+      <img src="Mypic.jpg" alt="Mouad Abdelhak" class="profile-img" onerror="this.src='https://via.placeholder.com/150'">
+      <div class="header-info">
+        <h1>Mouad Abdelhak</h1>
+        <p class="title">Étudiant en SINF2 à la FSSM | futur développeur de jeux vidéo 🎮</p>
+        <div class="contact-info">
+          <a href="mailto:morkadosse123@gmail.com"><i class="fas fa-envelope"></i> morkadosse123@gmail.com</a>
+          <a href="https://github.com/abdelhakmouad3-lab" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+          <a href="#" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <section>
+    <h2>À propos</h2>
+    <p class="about-text">
+      Je suis étudiant en deuxième année SINF2 à la faculté des sciences Semlalia de Marrakech. Je suis passionné par l'informatique et surtout par le développement de jeux vidéo. Mon parcours universitaire n'a pas été simple, mais il m'a appris à être patient et persévérant. J'ai de bonnes bases en langage C et en structures de données, ainsi que des connaissances correctes en HTML, CSS et JavaScript. Mon objectif est de devenir développeur de jeux vidéo dans un grand studio comme Rockstar Games ou Ubisoft. En dehors des études, j'aime les jeux vidéo, le football, la natation et le surf.
+    </p>
+  </section>
+  <section id="skills-section">
+    <h2>Compétences</h2>
+    <div class="skills-container">
+      <div class="technical-skills">
+        <div class="skill">
+          <div class="skill-name">HTML <span>80%</span></div>
+          <div class="skill-bar-bg"><div class="skill-bar" data-width="80"></div></div>
+        </div>
+        <div class="skill">
+          <div class="skill-name">CSS <span>75%</span></div>
+          <div class="skill-bar-bg"><div class="skill-bar" data-width="75"></div></div>
+        </div>
+        <div class="skill">
+          <div class="skill-name">JavaScript <span>55%</span></div>
+          <div class="skill-bar-bg"><div class="skill-bar" data-width="55"></div></div>
+        </div>
+        <div class="skill">
+          <div class="skill-name">React <span>50%</span></div>
+          <div class="skill-bar-bg"><div class="skill-bar" data-width="50"></div></div>
+        </div>
+        <div class="skill">
+          <div class="skill-name">jQuery <span>60%</span></div>
+          <div class="skill-bar-bg"><div class="skill-bar" data-width="60"></div></div>
+        </div>
+        <div class="skill">
+          <div class="skill-name">C / Structures de données <span>90%</span></div>
+          <div class="skill-bar-bg"><div class="skill-bar" data-width="90"></div></div>
+        </div>
+      </div>
+      <div class="soft-skills">
+        <span class="soft-tag">Français</span>
+        <span class="soft-tag">Anglais</span>
+        <span class="soft-tag">Travail en équipe</span>
+        <span class="soft-tag">Persévérance</span>
+        <span class="soft-tag">Résolution de problèmes</span>
+      </div>
+    </div>
+  </section>
+  <section>
+    <h2>Formation</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-year">2022</div>
+        <div class="timeline-content">Obtention du baccalauréat.</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-year">2023</div>
+        <div class="timeline-content">Admission à l'ENSA Agadir.</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-year">2024</div>
+        <div class="timeline-content">Validation de la première année avec une moyenne de 12/20.</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-year">2025</div>
+        <div class="timeline-content">Poursuite du parcours à l'ENSA Agadir.</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-year">2026</div>
+        <div class="timeline-content">Transfert réussi vers la FSSM de Marrakech en SINF2.</div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <h2>Expériences & Projets</h2>
+    <div id="projects"></div>
+  </section>
+  <section>
+    <h2>Contact</h2>
+    <form id="contactForm">
+      <div class="form-group">
+        <input type="text" id="name" placeholder="Votre nom">
+        <div class="error-msg" id="nameError"></div>
+      </div>
+      <div class="form-group">
+        <input type="email" id="email" placeholder="Votre email">
+        <div class="error-msg" id="emailError"></div>
+      </div>
+      <div class="form-group">
+        <textarea id="message" placeholder="Votre message"></textarea>
+        <div class="error-msg" id="messageError"></div>
+      </div>
+      <button type="submit">Envoyer</button>
+      <div class="success-msg" id="successMsg"></div>
+    </form>
+  </section>
+  <footer>
+    <p>© 2026 Mouad Abdelhak - CV Interactif</p>
+  </footer>
+</div>
+<script type="text/babel">
+function ProjectCard({ title, description, technologies, link }) {
+  return (
+    <div className="project-card">
+      <h3>{title}</h3>
+      <p>{description}</p>
+      <div className="project-tech">
+        {technologies.map((tech, i) => (
+          <span key={i} className="tech-badge">{tech}</span>
+        ))}
+      </div>
+      <a href={link} className="project-link" target="_blank" rel="noopener noreferrer">
+        Voir sur GitHub <i className="fab fa-github"></i>
+      </a>
+    </div>
+  );
+}
+const projectsData = [
+  {
+    title: "Moteur de jeu 2D en C",
+    description: "Développement d'un petit moteur de jeu avec gestion des collisions et sprites.",
+    technologies: ["C", "SDL2", "Structures de données"],
+    link: "https://github.com/abdelhakmouad3-lab/game-engine-c"
+  },
+  {
+    title: "Portfolio interactif",
+    description: "Site web personnel avec animations jQuery et composants React.",
+    technologies: ["HTML5", "CSS3", "JavaScript", "React", "jQuery"],
+    link: "https://github.com/abdelhakmouad3-lab/portfolio"
+  }
+];
+function App() {
+  return (
+    <div className="projects-grid">
+      {projectsData.map((project, index) => (
+        <ProjectCard
+          key={index}
+          title={project.title}
+          description={project.description}
+          technologies={project.technologies}
+          link={project.link}
+        />
+      ))}
+    </div>
+  );
+}
+ReactDOM.createRoot(document.getElementById('projects')).render(<App />);
+</script>
+<script src="script.js"></script>
 </body>
 </html>
