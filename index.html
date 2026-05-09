@@ -1,107 +1,63 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CV - Mouad Abdelhak</title>
-  <link rel="stylesheet" href="style.css">
-  <!-- ⭐ Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <!-- ⭐ Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
-  <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
-  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CV - Mouad Abdelhak</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 </head>
 <body>
-<header>
-  <img src="MyPic.jpg" class="profile-pic">
-  <h1>Mouad Abdelhak</h1>
-  <p>Étudiant SINF2 - FSSM | Futur développeur de jeux vidéo</p>
-  <p>
-    <i class="fa-solid fa-envelope"></i>
-    <a href="mailto:morkadosse123@gmail.com">morkadosse123@gmail.com</a>
-  </p>
-  <p>
-    <i class="fa-brands fa-github"></i>
-    <a href="https://github.com/abdelhakmouad3-lab" target="_blank">
-      GitHub Profile
-    </a>
-  </p>
+<header class="hero">
+<div class="container hero-content">
+<img src="MyPic.jpg" alt="Photo de profil" class="profile-pic">
+<div class="hero-text">
+<h1>Mouad Abdelhak</h1>
+<p class="subtitle">Étudiant en SINF2 à la FSSM | futur développeur de jeux vidéo</p>
+<div class="contact-links">
+<a href="mailto:morkadosse123@gmail.com"><i class="fa-solid fa-envelope"></i> morkadosse123@gmail.com</a>
+<a href="https://github.com/abdelhakmouad3" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+<a href="#"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+</div>
+</div>
+</div>
 </header>
-<section>
-  <h2>À propos</h2>
-  <p>
-    Je suis étudiant en deuxième année SINF2 à la fssm et je m'intéresse beaucoup à l'informatique,
-    surtout au développement de jeux vidéo.mon parcours n'a pas été simple,j'ai commencé à l'ensa
-    agadir mais à cause de problèmes administratifs et personnels j'ai perdu du temps, ce qui m'a
-    obligé à recommencer et changer d'établissement.aujourd'hui je suis plus motivé que jamais
-    pour avancer et réussir dans ce domaine.
-    j'ai de bonnes bases en programmation,surtout en langage c et en structures de données,
-    et je continue à progresser en développement web avec html,css et javascript.
-    en dehors des études,je suis un grand fan de jeux vidéo,c'est ce qui m'a donné envie de
-    devenir développeur.j'aime aussi le sport,surtout le football,et je pratiquais la natation
-    et le surf quand j'étais à agadir.
-  </p>
+<main class="container">
+<section class="section" id="about">
+<h2>À propos</h2>
+<p>Je suis étudiant en deuxième année SINF2 à la faculté des sciences Semlalia de Marrakech. Je suis passionné par l'informatique et surtout par le développement de jeux vidéo. Mon parcours universitaire n'a pas été simple, mais il m'a appris à être patient et persévérant. J'ai de bonnes bases en langage C et en structures de données, ainsi que des connaissances correctes en HTML, CSS et JavaScript. Mon objectif est de devenir développeur de jeux vidéo dans un grand studio comme Rockstar Games ou Ubisoft. En dehors des études, j'aime les jeux vidéo, le football, la natation et le surf.</p>
 </section>
-<section>
-  <h2>Compétences</h2>
-  <div class="skill"><p>HTML</p><div class="bar" data-width="80%"></div></div>
-  <div class="skill"><p>CSS</p><div class="bar" data-width="75%"></div></div>
-  <div class="skill"><p>JavaScript</p><div class="bar" data-width="50%"></div></div>
-  <div class="skill"><p>C / DS</p><div class="bar" data-width="90%"></div></div>
+<section class="section" id="skills">
+<h2>Compétences</h2>
+<div class="skill"><div class="skill-label"><span>HTML</span><span>80%</span></div><div class="skill-track"><div class="bar" data-width="80%"></div></div></div>
+<div class="skill"><div class="skill-label"><span>CSS</span><span>75%</span></div><div class="skill-track"><div class="bar" data-width="75%"></div></div></div>
+<div class="skill"><div class="skill-label"><span>JavaScript</span><span>55%</span></div><div class="skill-track"><div class="bar" data-width="55%"></div></div></div>
+<div class="skill"><div class="skill-label"><span>React</span><span>50%</span></div><div class="skill-track"><div class="bar" data-width="50%"></div></div></div>
+<div class="skill"><div class="skill-label"><span>jQuery</span><span>60%</span></div><div class="skill-track"><div class="bar" data-width="60%"></div></div></div>
+<div class="skill"><div class="skill-label"><span>C / Structures de données</span><span>90%</span></div><div class="skill-track"><div class="bar" data-width="90%"></div></div></div>
+<div class="skill-tags">
+<span>Français</span>
+<span>Anglais</span>
+<span>Travail en équipe</span>
+<span>Persévérance</span>
+<span>Résolution de problèmes</span>
+</div>
 </section>
-<section>
-  <h2>Formation</h2>
-  <button class="toggle">Voir parcours</button>
-  <div class="timeline">
-    <p>2022 : Bac</p>
-    <p>2023 - 2025 : ENSA Agadir</p>
-    <p>2026 : FSSM SINF2</p>
-  </div>
-</section>
-<section>
-  <h2>Projets</h2>
-  <div id="projects"></div>
-</section>
-<section>
-  <h2>Contact</h2>
-  <form id="contactForm">
-    <input type="text" id="name" placeholder="Nom">
-    <input type="email" id="email" placeholder="Email">
-    <textarea id="message" placeholder="Message"></textarea>
-    <button type="submit">Envoyer</button>
-  </form>
-</section>
-<script type="text/babel">
-function ProjectCard({title, desc, tech}) {
-  return (
-    <div className="card">
-      <h3>{title}</h3>
-      <p>{desc}</p>
-      <p><b>Tech:</b> {tech}</p>
-    </div>
-  );
-}
-function App() {
-  return (
-    <div>
-      <ProjectCard
-        title="Jeu 2D en C++"
-        desc="Petit jeu avec collisions et mouvements"
-        tech="C++"
-      />
-      <ProjectCard
-        title="CV interactif"
-        desc="Site web CV avec React + jQuery"
-        tech="HTML CSS JS React"
-      />
-    </div>
-  );
-}
-ReactDOM.createRoot(document.getElementById('projects')).render(<App />);
-</script>
-<script src="script.js"></script>
-</body>
+<section class="section" id="education">
+<h2>Formation</h2>
+<button class="toggle-btn">Afficher / masquer le parcours</button>
+<div class="timeline">
+<div class="timeline-item"><h3>2022</h3><p>Obtention du baccalauréat.</p></div>
+<div class="timeline-item"><h3>2023</h3><p>Admission à l'ENSA Agadir.</p></div>
+<div class="timeline-item"><h3>2024</h3><p>Validation de la première année avec une moyenne de 12/20.</p></div>
+<div class="timeline-item"><h3>2025</h3><p>Poursuite du parcours à l'ENSA Agadir.</p></div>
+<div class="timeline-item"><h3>2026</h3><p>Transfert réussi vers la FSSM de Marrakech en SINF2.</p></div>
+</div>
 </html>
