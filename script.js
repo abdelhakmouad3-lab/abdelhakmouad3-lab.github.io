@@ -1,27 +1,25 @@
-$(document).ready(function(){
-    $('.toggle').click(function(){
-      $('.timeline').slideToggle();
-    });
-    $(window).scroll(function(){
-      $('.bar').each(function(){
-        let position = $(this).offset().top;
-        let scroll = $(window).scrollTop() + $(window).height();
-  
-        if(scroll > position){
-          let width = $(this).data('width');
-          $(this).animate({ width: width }, 1000);
-        }
-      });
-    });
-    $('#contactForm').submit(function(e){
-      e.preventDefault();
-      let name = $('#name').val();
-      let email = $('#email').val();
-      let message = $('#message').val();
-      if(name === "" || email === "" || message === ""){
-        alert("remplir tous les champs !");
-      } else {
-        alert("message envoyé !");
-      }
-    });
+$(document).ready(function () {
+  $('.toggle-btn').click(function () {
+    $('.timeline').stop(true, true).slideToggle();
   });
+  let animated = false;
+  function animateBars() {
+    if (animated) {
+      return;
+    }
+    $('.bar').each(function () {
+      let width = $(this).data('width');
+      $(this).animate({ width: width }, 1200);
+    });
+    animated = true;
+  }
+  function checkSkills() {
+    const skillsTop = $('#skills').offset().top;
+    const scroll = $(window).scrollTop() + $(window).height();
+
+    if (scroll > skillsTop + 50) {
+      animateBars();
+    }
+  }
+  checkSkills();
+});
