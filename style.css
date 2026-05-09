@@ -1,95 +1,64 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
 body {
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    background: linear-gradient(135deg, #0f172a, #1e293b);
-    color: white;
-  }
-header {
-    text-align: center;
-    padding: 40px;
-    background: rgba(0,0,0,0.3);
-    backdrop-filter: blur(10px);
-  }
-h1 {
-    font-size: 40px;
-  }
-h2 {
-    border-left: 5px solid #38bdf8;
-    padding-left: 10px;
-  }
-section {
-    padding: 30px;
-    max-width: 900px;
-    margin: auto;
-  }  
-.skill {
-    margin: 15px 0;
-  }  
-.bar {
-    height: 20px;
-    background: linear-gradient(to right, #38bdf8, #22c55e);
-    width: 0;
-    border-radius: 10px;
-  }  
-.timeline {
-    display: none;
-    background: #1e293b;
-    padding: 15px;
-    border-radius: 10px;
-  }  
-.card {
-    background: #1e293b;
-    padding: 15px;
-    margin: 10px 0;
-    border-radius: 15px;
-    transition: 0.3s;
-  }  
-.card:hover {
-    transform: scale(1.05);
-  }  
-input, textarea {
-    width: 100%;
-    padding: 10px;
-    margin: 5px 0;
-    border-radius: 10px;
-    border: none;
-  }  
-button {
-    padding: 10px 20px;
-    background: #38bdf8;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-  }
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  color: #e2e8f0;
+  line-height: 1.7;
+}
+.container {
+  width: min(1100px, 92%);
+  margin: auto;
+}
+.hero {
+  padding: 60px 0;
+  background: rgba(15, 23, 42, 0.75);
+  border-bottom: 1px solid rgba(148, 163, 184, 0.2);
+}
+.hero-content {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
 .profile-pic {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 3px solid #38bdf8;
-    margin-bottom: 15px;
-  }
-@media (max-width: 768px) {
-    header {
-      padding: 20px;
-    }  
-    h1 {
-      font-size: 26px;
-    }
-    h2 {
-      font-size: 20px;
-    }  
-    section {
-      padding: 15px;
-    }  
-    .profile-pic {
-      width: 100px;
-      height: 100px;
-    }  
-    input, textarea {
-      width: 100%;
-    }  
-    .card {
-      margin: 10px 0;
-    }  
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #38bdf8;
+  box-shadow: 0 0 25px rgba(56, 189, 248, 0.35);
+  transition: 0.3s;
+}
+.profile-pic:hover {
+  transform: scale(1.05);
+}
+.hero-text h1 {
+  margin: 0;
+  font-size: 2.6rem;
+  color: #ffffff;
+}
+.subtitle {
+  margin: 10px 0 18px;
+  color: #cbd5e1;
+  font-weight: 300;
+}
+.contact-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.contact-links a {
+  text-decoration: none;
+  color: #e2e8f0;
+  background: rgba(30, 41, 59, 0.8);
+  padding: 10px 14px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
 }
